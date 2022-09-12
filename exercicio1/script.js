@@ -11,10 +11,11 @@ Quando a resposta não for **sim**, devemos imprimir o valor total da conta.
 let desejaMaisCoxinha = prompt("Deseja comer uma coxinha? C> \n - Digite “S” para representar “sim”, \n - Digite “N” para representar “não” ").toUpperCase()
 let totalCoxinha = 0
 
-while (desejaMaisCoxinha == "S"){
+while (desejaMaisCoxinha === "S"){
     totalCoxinha = totalCoxinha + 1
-    console.log("Você já comeu", totalCoxinha, "coxinha(s)")
+
+    console.log("Você já comeu", totalCoxinha, "coxinha(s). Valor Total = R$",totalCoxinha*2.5)
     desejaMaisCoxinha = prompt("Deseja comer mais uma coxinha? C> \n - Digite “S” para representar “sim”, \n - Digite “N” para representar “não” ").toUpperCase()
 
 }
-console.log("Agradecemos a preferencia! O total de coxinhas que você comeu foi:",totalCoxinha)
+console.log("Agradecemos a preferencia! O total de coxinha(s) que você comeu foi:",totalCoxinha, ". Valor Total = R$",totalCoxinha*2.5)
